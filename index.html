@@ -13,6 +13,8 @@
             --gs-black: #262626;
             --gs-bg-gray: #F6F7F8;
             --text-main: rgba(0, 0, 0, 0.95);
+            --alert-bg: #fff3cd;
+            --alert-border: #856404;
         }
 
         body {
@@ -25,7 +27,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        
         h1, h2, h3, h4 {
             font-family: "Sabon", Georgia, "Times New Roman", serif;
             font-weight: 400;
@@ -43,7 +44,6 @@
             padding: 20px;
         }
 
-        
         .nav-bar {
             background-color: #fff;
             border-bottom: 1px solid #e0e0e0;
@@ -75,7 +75,6 @@
             letter-spacing: 1px;
         }
 
-        
         .hero {
             background-color: var(--gs-bg-gray);
             padding: 60px 20px;
@@ -93,7 +92,6 @@
             margin: 0 auto;
         }
 
-        
         .section-content {
             padding: 20px 0;
         }
@@ -104,7 +102,6 @@
             gap: 40px;
         }
 
-        
         .skill-tag {
             display: inline-block;
             background-color: var(--gs-bg-gray);
@@ -115,7 +112,6 @@
             font-weight: 600;
         }
 
-        
         .project-card {
             margin-bottom: 30px;
             padding-bottom: 20px;
@@ -129,7 +125,6 @@
             display: block;
         }
 
-        
         .ats-hidden {
             display: none;
         }
@@ -141,18 +136,23 @@
             margin-bottom: 8px;
         }
 
-        .btn-apply {
-            display: inline-block;
-            background-color: var(--gs-black);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
+        /* NEW STYLES FOR GPA NOTE */
+        .gpa-note-box {
+            background-color: var(--alert-bg);
+            border: 1px solid var(--alert-border);
+            padding: 20px;
             margin-top: 20px;
-            letter-spacing: 1px;
+            border-radius: 4px;
+        }
+        .gpa-screenshot {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        
         .footer {
             background-color: var(--gs-bg-gray);
             padding: 40px 0;
@@ -248,7 +248,16 @@
                 <p><strong>Bachelor of Science in Business Computer Information Systems</strong><br>
                 Expected Graduation: May 2026 | GPA: 3.2</p>
 
-                <p><strong>Relevant Engineering Coursework:</strong><br>
+                
+                <div class="gpa-note-box">
+                    <strong>IMPORTANT NOTE REGARDING ONLINE APPLICATION:</strong><br>
+                    The GPA dropdown skipped 3.2, so I selected 3.3 ON THE ONLINE APPLICATION. My actual GPA is 3.2 as displayed on my resume.
+                    <br><br>
+                    <strong>PROOF:</strong>
+                    <br>
+                    <img src="gpa_screenshot.png" alt="Screenshot showing 3.2 is missing from the dropdown menu" class="gpa-screenshot">
+                </div>
+                <p style="margin-top: 20px;"><strong>Relevant Engineering Coursework:</strong><br>
                 Computer Science I & II (C/C++), Data Analysis, Enterprise Programming (Java/MySQL), Information Security Policy, Object Oriented Programming.</p>
 
                 <div style="background-color: #f0f4f8; padding: 15px; border-left: 4px solid var(--gs-navy); margin-top: 15px;">
@@ -258,8 +267,6 @@
                 </div>
             </div>
         </div>
-
-        
 
         <div id="projects" class="section-content">
             <h2>PROJECT EXPERIENCE</h2>
